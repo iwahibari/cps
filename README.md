@@ -1,33 +1,34 @@
 # cps 複数PCへのsshを簡単に扱う
 
 ## cpsとは
-- LinuxやWSLで長いコマンド、パスワードを用いずにssh接続をする
+- LinuxやWSLで長いコマンド、パスワードを用いずにssh接続をする。
 - 登録済みの全PCにssh接続をして、指定コマンドを実行する。
+- ipアドレスやパスワードを記述したjsonファイルを用いるため、共有PCでは使わない。
 
 ## cpsを使う
 
-0. cpsを実行するには`expect`コマンドとpythonが必要です。インストールされていない場合、以下のコマンドを実行してインストールしてください。
+**0. cpsを実行するには`expect`コマンドとpythonが必要です。インストールされていない場合、以下のコマンドを実行してインストールしてください。**
 ```sh
 sudo apt install python3
 sudo apt install expect
 ```
 
-1. 本リポジトリをクローン
+**1. 本リポジトリをクローン**
 ```sh
 git clone https://github.com/iwahibari/cps.git
 ```
 
-2. `~/.bashrc`にaliasを記載
+**2. `~/.bashrc`にaliasを記載**
 ```sh
 alias cps="python pathToDirectry/cps/cps.py"
 ```
 
-3. `source ~/.bashrc`を実行
+**3. `source ~/.bashrc`を実行**
 
-4. `pc_ip.json`にssh接続先PCの情報を登録
-    cpsでは`pc_ip.json`に登録された情報をもとにssh接続を実行します。
-    下の例をもとにssh接続先pcの情報を登録してください。　
-    コマンド実行時に指定するPC名を`name`に、ユーザーネームを`username`に、ipアドレスを`ip`に、パスワードを`pass`にそれぞれ登録します。
+**4. `pc_ip.json`にssh接続先PCの情報を登録**
+    cpsでは`pc_ip.json`に登録された情報をもとにssh接続を実行します。  
+    下の例をもとにssh接続先pcの情報を登録してください。  
+    コマンド実行時に指定するPC名を`name`に、ユーザーネームを`username`に、ipアドレスを`ip`に、パスワードを`pass`にそれぞれ登録します。  
 ```json
 {
 	"pc": [
@@ -53,7 +54,7 @@ alias cps="python pathToDirectry/cps/cps.py"
 }
 ```
 
-5. 使用に当たる準備は以上です。
+**5. 準備は以上です。**
 
 ## 使い方
 

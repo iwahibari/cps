@@ -4,19 +4,19 @@
 			"name": "test1",
 			"username": "username1",
 			"ip": "192.168.0.111",
-			"pass": "toshiaki"
+			"pass": "password"
 		},
 		{
 			"name": "test2",
 			"username": "username2",
 			"ip": "192.168.0.222",
-			"pass": "toshiaki"
+			"pass": "password"
 		},
 		{
 			"name": "test3",
 			"username": "username3",
 			"ip": "192.168.0.333",
-			"pass": "toshiaki"
+			"pass": "password"
 		}
 	]
 }
