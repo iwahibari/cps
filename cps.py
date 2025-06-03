@@ -1,7 +1,7 @@
 # File check_gpu.py
 # Author: Toshiaki Ueda
 # Description: 標準入力からssh 
-# Version: 5.0
+# Version: 5.3
 
 import json 
 import os
