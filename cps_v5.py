@@ -15,6 +15,7 @@ json_dict = json.load(jf)
 
 expfile_path = os.path.dirname(__file__) + "/tempfile/tmp_expect_cmd.exp"
 os.system("rm -f " + expfile_path)
+
 try:
     pc_name = sys.argv[1]
 except:
