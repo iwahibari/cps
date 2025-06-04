@@ -1,6 +1,6 @@
 # File check_gpu.py
 # Author: Toshiaki Ueda
-# Description: 標準入力からssh -> gpu確認 nviida-smi
+# Description: 標準入力からssh 
 # Version: 5.1
 
 import json 
