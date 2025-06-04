@@ -7,7 +7,7 @@ import json
 import os
 import sys
 
-# jsonファイルのpathを取得して読み込み
+# jsonファイルのpathを取得して読み込みする
 pyfile_path = __file__
 jsonfile_path = os.path.dirname(__file__) + "/pc_ip.json"
 jf = open(jsonfile_path, 'r')
