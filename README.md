@@ -25,7 +25,7 @@ alias cps="python pathToDirectry/cps/cps.py"
 
 **3. `source ~/.bashrc`を実行**
 
-**4. `pc_ip.json`にssh接続先PCの情報を登録**
+**4. `pc_ip.json`にssh接続先PCの情報を登録**  
     cpsでは`pc_ip.json`に登録された情報をもとにssh接続を実行します。  
     下の例をもとにssh接続先pcの情報を登録してください。  
     コマンド実行時に指定するPC名を`name`に、ユーザーネームを`username`に、ipアドレスを`ip`に、パスワードを`pass`にそれぞれ登録します。  
